@@ -1,0 +1,48 @@
+<div class="row full_contact">
+    <mat-card>
+        <mat-card-title class="contactform_title">CONTACT FORM</mat-card-title>
+        <div class="form_fields">
+            <form>
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>First name</mat-label>
+                    <input matInput>
+                </mat-form-field>
+
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Last name</mat-label>
+                    <input matInput>
+                </mat-form-field>
+
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Email</mat-label>
+                    <input type="email" matInput [formControl]="emailFormControl" placeholder="Ex. pat@example.com">
+                    <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                        Please enter a valid email address
+                    </mat-error>
+                    <mat-error *ngIf="emailFormControl.hasError('required')">
+                        Email is <strong>required</strong>
+                    </mat-error>
+                </mat-form-field>
+
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Phone Number</mat-label>
+                    <span matPrefix>+94 &nbsp;</span>
+                    <input type="tel" matInput placeholder="555-555-1234">
+                </mat-form-field>
+
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Message</mat-label>
+                    <textarea matInput maxlength="256" #message placeholder="Ex. I need help with..."></textarea>
+                    <mat-hint align="start"><strong>Don't disclose personal info</strong> </mat-hint>
+                    <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
+                </mat-form-field>
+
+                <div class="contact_button">
+                    <button mat-raised-button class="save_button" color="primary">SEND</button>
+                    <button mat-raised-button class="cancle_button" color="warn">CANCLE</button>
+                </div>
+
+            </form>
+        </div>
+    </mat-card>
+</div>

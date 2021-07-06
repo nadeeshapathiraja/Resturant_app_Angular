@@ -1,1 +1,152 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+@import '@angular/material/prebuilt-themes/indigo-pink.csss';
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.example-container {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    bottom: 0px;
+    top: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.example-sidenav-content {
+    display: flex;
+}
+
+.example-sidenav {
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 17, 255);
+}
+
+.example-ripple-form-field {
+    margin: 20px;
+}
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.example-full-width {
+    width: 100%;
+}
+
+.form_fields {
+    margin: 80px;
+}
+
+.full_contact {
+    margin: 100px;
+}
+
+.full_signinup {
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 30px;
+}
+
+
+/* Tab view */
+
+@media only screen and (max-width: 800px) {
+    .form_fields {
+        margin: 60px;
+    }
+    .full_contact {
+        margin: 80px;
+    }
+    .full_signinup {
+        margin: 10px;
+    }
+    .appbar_logo {
+        width: 50px;
+        margin-right: 10px;
+    }
+    .appbar_profile {
+        width: 25px;
+    }
+}
+
+
+/* Mobile View */
+
+@media only screen and (max-width: 600px) {
+    .form_fields {
+        margin: 10px;
+    }
+    .full_contact {
+        margin: 20px;
+    }
+    .full_signinup {
+        margin-top: 60px;
+    }
+    .appbar_logo {
+        width: 40px;
+        margin-right: 10px;
+    }
+    .appbar_profile {
+        width: 20px;
+    }
+}
+
+.contact_button {
+    margin: 30px;
+}
+
+.save_button {
+    width: 100px;
+}
+
+.cancle_button {
+    width: 100px;
+}
+
+.contactform_title {
+    text-align: center;
+}
+
+.example-container .mat-form-field+.mat-form-field {
+    width: 100%;
+}
+
+.example-right-align {
+    text-align: right;
+}
+
+input.example-right-align::-webkit-outer-spin-button,
+input.example-right-align::-webkit-inner-spin-button {
+    display: none;
+}
+
+input.example-right-align {
+    -moz-appearance: textfield;
+}
+
+.appbar_logo {
+    width: 70px;
+    margin-right: 10px;
+}
+
+.appbar_profile {
+    width: 30px;
+}
