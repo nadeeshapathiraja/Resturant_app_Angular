@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 //import Matirials
 import { MyMatirialModule } from './material';
+import { HttpClientModule } from '@angular/common/http';
 import { MenuComponent } from './menu/menu.component';
 import { CartComponent } from './cart/cart.component';
 import { PastordersComponent } from './pastorders/pastorders.component';
@@ -35,7 +36,8 @@ import { HomeComponent } from './home/home.component';
     BrowserAnimationsModule,
     MyMatirialModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
 
   ],
   providers: [],
